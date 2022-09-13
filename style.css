@@ -1,0 +1,198 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 17px;
+  height: 100vh;
+  width: 100%;
+  background-image: url('./images/med1.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.wrapper {
+  height: 100%;
+  min-width: 660px;
+  height: 400px;
+  display: flex;
+  background-color: rgba(54, 54, 54, 0.481);
+  border-radius: 10px;
+  border: 0.5px solid rgba(255, 253, 253, 0.4);
+  position: relative;
+
+}
+.sidebar{
+  flex: 30%;
+  padding: 10px;
+  justify-content: space-between;
+  border-radius: 10px;
+  background-color: rgba(4, 49, 5, 0.412);
+}
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  color: rgb(255, 253, 253);
+  
+}
+.caption{
+  display: block;
+  font-size: 13px;
+}
+.profile{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.793);
+  width: 100%;
+  padding-bottom: 10px;
+  text-align: center;
+  color: rgb(19, 7, 7);
+}
+.user-image{
+  border-radius: 50%;
+}
+.sidebar-items  {
+  font-size: 15px;
+  margin-top: 18px;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(9, 9, 9, 0.09);
+  width: 85%;
+  padding: 7px;
+  border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
+  text-align: left;
+
+}
+.sidebar-items.active {
+  background-color: rgba(28, 28, 28, 0.463);
+}
+
+.sidebar-items:hover {
+  background-color: rgba(36, 36, 36, 0.333);
+}
+.sidebar-content>:last-child{
+  position: absolute;
+  background-color: rgba(28, 28, 28, 0.406);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: -29%;
+  border-bottom: none;
+  width: 80%;
+  color: rgb(126, 126, 126);
+  height: 50px;
+}
+.sidebar-content>:last-child:hover{
+  background-color: rgba(30, 30, 30, 0.677);
+  color: #eee;
+
+}
+.content{
+  flex: 70%;
+  background-color: rgba(6, 68, 7, 0.216);
+  padding-left: 30px;;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.content-heading {
+  padding: 10px;
+  color: rgb(215, 206, 206);
+  margin-left: 10px;
+}
+.search-bar{
+  border: 1px solid rgba(223, 223, 223, 0.631);
+  border-radius: 20px;
+  color: rgb(222, 224, 224);
+  width: 200px;
+  /* align-self: center; */
+  text-align: center;
+  padding: 4px;
+  font-size: 14px;
+  margin-left: 40px;
+  background-color: transparent;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.search-bar:focus, .search-bar:hover .search-bar:active {
+  outline: none;
+  border: 1px solid rgb(104, 104, 104);
+  cursor: pointer;
+}
+.card{
+  cursor: pointer;
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid rgba(220, 220, 220, 0.671);
+  margin-top: 14px;
+  margin-left: 40px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(71, 97, 66, 0.198);
+
+}
+.card>img {
+  border-radius: 10px;
+}
+.card .desc {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-left: 20px;
+  font-size: 15px;
+  flex: 1;
+  margin-top: 10px;
+}
+.card:hover{
+  background-color: rgba(44, 44, 44, 0.196);
+  
+}
+.stars> i {
+  /* position: absolute; */
+  margin-top: 20px;
+  color: rgb(239, 239, 8);
+  align-self: flex-end;
+  justify-self: flex-end;
+  bottom: 6px;
+  left: 100px;
+}
+.card .price{
+  justify-self: center;
+  align-self: center;
+  margin: 10px;
+  font-weight: bold;
+}
+.cart{
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 3px;
+  padding: 5px;
+  color: rgba(8, 8, 8, 0.806);
+  font-size: 29px;
+  display: flex;
+}
+.cart span {
+  font-size: 18px;
+  align-self: flex-start;
+  justify-self: flex-start;
+  position: absolute;
+  color: rgb(26, 26, 26);
+  right: 1px;
+  text-align: center;
+  background-color: rgb(202, 202, 202);
+  border-radius: 50%;
+  width: 15px;
+  height: 16px;
+  font-family: sans-serif;
+}
